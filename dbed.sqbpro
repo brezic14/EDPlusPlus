@@ -1,46 +1,210 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="H:/NSI/dossier élèves - projet NSI n3/dbed.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1031"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainNOTES"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="ELEVE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="42"/><column index="3" value="57"/><column index="4" value="48"/><column index="5" value="84"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="ELEVES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="87"/><column index="2" value="46"/><column index="3" value="57"/><column index="4" value="48"/><column index="5" value="84"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MATIERE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="71"/><column index="3" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="NOTE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="62"/><column index="2" value="73"/><column index="3" value="49"/><column index="4" value="40"/><column index="5" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="NOTES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="87"/><column index="2" value="87"/><column index="3" value="87"/><column index="4" value="87"/><column index="5" value="87"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="TEST" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="1"/></sort><column_widths><column index="1" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 3">INSERT INTO MATIERES
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/Scover/Bureau/Programmation/Python/EDPlusPlus/EDPlusPlus/dbed.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="2"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1703"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainNOTES"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="CLASSES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="51"/><column index="2" value="57"/><column index="3" value="108"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="COURS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="62"/><column index="2" value="77"/><column index="3" value="98"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="ELEVE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="42"/><column index="3" value="57"/><column index="4" value="48"/><column index="5" value="84"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="ELEVES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="87"/><column index="2" value="46"/><column index="3" value="163"/><column index="4" value="48"/><column index="5" value="84"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="EVALUATIONS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="40"/><column index="2" value="207"/><column index="3" value="102"/><column index="4" value="64"/><column index="5" value="40"/><column index="6" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MATIERE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="71"/><column index="3" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MATIERES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="NOTE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="62"/><column index="2" value="73"/><column index="3" value="49"/><column index="4" value="40"/><column index="5" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="NOTES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="87"/><column index="2" value="87"/><column index="3" value="87"/><column index="4" value="87"/><column index="5" value="87"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="PROFESSEURS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="118"/><column index="3" value="57"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="TEST" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="1"/></sort><column_widths><column index="1" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="MATIERES">INSERT INTO MATIERES (type, nom)
 VALUES
-(1, &quot;Philosophie&quot;, 1),
-(2, &quot;NSI&quot;, 1);
+(&quot;LV2&quot;, &quot;Allemand&quot;),
+(&quot;LV2&quot;, &quot;Espagnol&quot;),
+(&quot;LV2&quot;, &quot;Italien&quot;),
+(&quot;LV3&quot;, &quot;Chinois&quot;),
+(&quot;Option&quot;, &quot;DNL&quot;),
+(&quot;Option&quot;, &quot;Euro&quot;),
+(&quot;Option&quot;, &quot;Maths complémentaires&quot;),
+(&quot;Option&quot;, &quot;Maths expertes&quot;),
+(&quot;Option&quot;, &quot;Éducation musicale&quot;),
+(&quot;Spécialité&quot;, &quot;DE&quot;),
+(&quot;Spécialité&quot;, &quot;EGH&quot;),
+(&quot;Spécialité&quot;, &quot;HGGSP&quot;),
+(&quot;Spécialité&quot;, &quot;HLP&quot;),
+(&quot;Spécialité&quot;, &quot;MSGN&quot;),
+(&quot;Spécialité&quot;, &quot;Maths&quot;),
+(&quot;Spécialité&quot;, &quot;NSI&quot;),
+(&quot;Spécialité&quot;, &quot;Physique&quot;),
+(&quot;Spécialité&quot;, &quot;SES&quot;),
+(&quot;Spécialité&quot;, &quot;SI&quot;),
+(&quot;Spécialité&quot;, &quot;SVT&quot;),
+(&quot;Spécialité&quot;, &quot;AMC&quot;),
+(&quot;Tronc commun&quot;, &quot;Anglais LV1&quot;),
+(&quot;Tronc commun&quot;, &quot;EMC&quot;),
+(&quot;Tronc commun&quot;, &quot;EPS&quot;),
+(&quot;Tronc commun&quot;, &quot;Enseignement scientifique&quot;),
+(&quot;Tronc commun&quot;, &quot;Histoire-Géographie&quot;),
+(&quot;Tronc commun&quot;, &quot;Philosophie&quot;)</sql><sql name="PROFESSEURS">INSERT INTO PROFESSEURS (nom, prenom)
+VALUES
+(&quot;Allain&quot;, &quot;A.&quot;),
+(&quot;Arroyo&quot;, &quot;M.&quot;),
+(&quot;Barriac&quot;, &quot;A.&quot;),
+(&quot;Beauvillain&quot;, &quot;A.&quot;),
+(&quot;Blin&quot;, &quot;E.&quot;),
+(&quot;Branellec-Eychenne&quot;, &quot;P.&quot;),
+(&quot;Colin&quot;, &quot;Y.&quot;),
+(&quot;Debeau&quot;, &quot;N.&quot;), 
+(&quot;Debray&quot;, &quot;N.&quot;), 
+(&quot;Delgado&quot;, &quot;N.&quot;), 
+(&quot;Derrien&quot;, &quot;N.&quot;), 
+(&quot;Derrien&quot;, &quot;N.&quot;), 
+(&quot;Dewez-Minjo&quot;, &quot;N.&quot;), 
+(&quot;Garnier&quot;, &quot;N.&quot;), 
+(&quot;Guelou&quot;, &quot;N.&quot;), 
+(&quot;Hamelin&quot;, &quot;N.&quot;), 
+(&quot;Herlet&quot;, &quot;N.&quot;), 
+(&quot;Huon&quot;, &quot;N.&quot;), 
+(&quot;Inisan&quot;, &quot;N.&quot;), 
+(&quot;Le Balc'h&quot;, &quot;N.&quot;),
+(&quot;Lemaître&quot;, &quot;E.&quot;),
+(&quot;Lissilour&quot;, &quot;S.&quot;),
+(&quot;Martinache&quot;, &quot;E.&quot;),
+(&quot;Meudic&quot;, &quot;O.&quot;),
+(&quot;Molle&quot;, &quot;A.&quot;),
+(&quot;Mouaze&quot;, &quot;E.&quot;),
+(&quot;Poppleton&quot;, &quot;M.&quot;),
+(&quot;Taton&quot;, &quot;L.&quot;),
+(&quot;Topart&quot;, &quot;K.&quot;),
+(&quot;Touze&quot;, &quot;C.&quot;),
+(&quot;Trevien&quot;, &quot;A.&quot;),
+(&quot;Urvoy&quot;, &quot;C.&quot;)
+</sql><sql name="EVALUATIONS">INSERT INTO EVALUATIONS (titre, dateEval, noteMax, coef, id_matiere)
+VALUES
+(&quot;Interrogation chapitre 1&quot;, &quot;2022-09-21&quot;, 10, 0.5, 26),
+(&quot;Synthèse Nuit de Cristal&quot;, &quot;2022-09-21&quot;, 5, 0.25, 26),
+(&quot;Affiche démocratie&quot;, &quot;2022-10-06&quot;, 5, 0.25, 23),
+(&quot;Exposé démocraties&quot;, &quot;2022-10-12&quot;, 10, 0.5, 23),
+(&quot;Interrogation démocratie&quot;, &quot;2022-10-19&quot;, 10, 0.5, 23),
+(&quot;Writing entraînement&quot;, &quot;2022-09-20&quot;, 5, 0.25, 22),
+(&quot;Test vocabulaire&quot;, &quot;2022-09-23&quot;, 5, 0.25, 22),
+(&quot;C.O. La Canarias&quot;, &quot;2022-10-03&quot;, 20, 1, 2),
+(&quot;Verbos y vocabulario&quot;, &quot;2022-10-03&quot;, 20, 1, 2),
+(&quot;Origine O2&quot;, &quot;2022-09-23&quot;, 5, 0.25, 25),
+(&quot;Devoir sciences physiques&quot;, &quot;2022-10-17&quot;, 15, 1, 25),
+(&quot;DS BDD&quot;, &quot;2022-09-30&quot;, 20, 3, 16),
+(&quot;Épreuve pratique 01&quot;, &quot;2022-10-11&quot;, 20, 3, 16),
+(&quot;Test unit 1&quot;, &quot;2022-10-21&quot;, 20, 1, 5),
+(&quot;Éval 1 - Fonctions-TVI&quot;, &quot;2022-10-04&quot;, 20, 1, 7)</sql><sql name="NOTES">INSERT INTO NOTES (id_eleve, valeur, id_evaluation)
+VALUES
+(3, 8.5, 1),
+(3, 4.5, 2),
+(3, 3.5, 3),
+(3, 8, 4),
+(3, 8.5, 5),
+(3, 3.5, 6),
+(3, 2, 7),
+(3, 11, 8),
+(3, 9, 9),
+(3, 19.5, 10),
+(3, 20, 11),
+(3, 18, 12),
+(3, 19, 13)</sql><sql name="CLASSES">INSERT INTO CLASSES (niveau, numero)
+VALUES
+(&quot;Terminale&quot;, 1),
+(&quot;Terminale&quot;, 2),
+(&quot;Terminale&quot;, 3),
+(&quot;Terminale&quot;, 4),
+(&quot;Terminale&quot;, 5)</sql><sql name="ELEVES">INSERT INTO ELEVES (nom, prenom, id_classe)
+VALUES
+(&quot;Nerzic&quot;, &quot;Brévin&quot;, 2),
+(&quot;Allain&quot;, &quot;Pol-Ewen&quot;, 3),
+(&quot;Bardini&quot;, &quot;Raphaël&quot;, 3),
+(&quot;Bourdaret&quot;, &quot;Nino&quot;, 3),
+(&quot;Brunetau&quot;, &quot;Liz&quot;, 3),
+(&quot;Connan&quot;, &quot;Yann&quot;, 3),
+(&quot;Corbe&quot;, &quot;Malo&quot;, 3),
+(&quot;Daniel&quot;, &quot;Amélie&quot;, 3),
+(&quot;David&quot;, &quot;Titouan&quot;, 3),
+(&quot;De Coattarel&quot;, &quot;Adélaïde&quot;, 3),
+(&quot;Dehaye&quot;, &quot;Arthur&quot;, 3),
+(&quot;Delaunay&quot;, &quot;Liz&quot;, 3),
+(&quot;Faucon&quot;, &quot;Clara&quot;, 3),
+(&quot;Ferret&quot;, &quot;Hawaï&quot;, 3),
+(&quot;Gautier&quot;, &quot;Daphnée&quot;, 3),
+(&quot;Guillaudeux&quot;, &quot;Yaël&quot;, 3),
+(&quot;Inisan&quot;, &quot;Jeanne&quot;, 3),
+(&quot;Jacob&quot;, &quot;Julie&quot;, 3),
+(&quot;Jouno&quot;, &quot;Léa-Angélina&quot;, 3),
+(&quot;Jouvet -- Cabec&quot;, &quot;Thomas&quot;, 3),
+(&quot;Keraudrenn&quot;, &quot;Rozenn&quot;, 3),
+(&quot;Lamour&quot;, &quot;Hugo&quot;, 3),
+(&quot;Laplanche&quot;, &quot;Ioanna&quot;, 3),
+(&quot;Le Fesson&quot;, &quot;Baptiste&quot;, 3),
+(&quot;Le Sech&quot;, &quot;Julie&quot;, 3),
+(&quot;Le Tacon&quot;, &quot;Antoine&quot;, 3),
+(&quot;Lucas&quot;, &quot;Léo&quot;, 3),
+(&quot;Manac'h&quot;, &quot;Cancice&quot;, 3),
+(&quot;Marc&quot;, &quot;Julie&quot;, 3),
+(&quot;Nicol&quot;, &quot;Emma&quot;, 3),
+(&quot;Passaret -- Le Fèvre&quot;, &quot;Inès&quot;, 3),
+(&quot;Peillon&quot;, &quot;Adrien&quot;, 3),
+(&quot;Pommeron&quot;, &quot;Nicolas&quot;, 3),
+(&quot;Portant&quot;, &quot;Quentin&quot;, 3),
+(&quot;Ropars&quot;, &quot;Andréa&quot;, 3),
+(&quot;Sadou&quot;, &quot;Laureen&quot;, 3)</sql><sql name="COURS">INSERT INTO COURS
+VALUES
+(3, 27, 9),
+(3, 26, 8),
+(3, 23, 8),
+(3, 22, 22),
+(3, 2, 18),
+(3, 25, 27),
+(3, 25, 25),
+(3, 24, 30),
+(3, 16, 31),
+(3, 21, 23),
+(3, 6, 17),
+(3, 5, 22),
+(3, 7, 15)</sql><sql name="TABLES">DROP TABLE IF EXISTS COURS;
+DROP TABLE IF EXISTS ELEVES;
+DROP TABLE IF EXISTS CLASSES;
+DROP TABLE IF EXISTS NOTES;
+DROP TABLE IF EXISTS EVALUATIONS;
+DROP TABLE IF EXISTS PROFESSEURS;
+DROP TABLE IF EXISTS MATIERES;
+
+CREATE TABLE MATIERES(
+id INTEGER PRIMARY KEY,
+type TEXT,
+nom TEXT);
 
-INSERT INTO ELEVES
-VALUES
-(1, &quot;Nerzic&quot;, &quot;Brévin&quot;, &quot;T2&quot;, &quot;1,2&quot;),
-(2, &quot;Bardini&quot;, &quot;Raphaël&quot;, &quot;T3&quot;, &quot;1,2&quot;);
-
-INSERT INTO NOTES
-VALUES
-(2, &quot;2022-09-30&quot;, 19.5, 3, 2),
-(2, &quot;2022-10-11&quot;, 20, 3, 2);
-
-INSERT INTO PROFESSEURS
-VALUES
-(&quot;Trevien&quot;, &quot;Arnaud&quot;, 2);
-
-</sql><sql name="SQL 2">CREATE TABLE MATIERES(
-id INT PRIMARY KEY,
-nom TEXT,
-coef INT);
-
-CREATE TABLE PROFESSEURS(
+CREATE TABLE PROFESSEURS(
+id INTEGER PRIMARY KEY,
 nom TEXT, 
-prenom TEXT,
-id_matiere INT,
-FOREIGN KEY (id_matiere) REFERENCES MATIERES(id));
+prenom TEXT);
+
+CREATE TABLE EVALUATIONS(
+id INTEGER PRIMARY KEY,
+titre TEXT,
+dateEval DATE,
+noteMax DECIMAL,
+coef DECIMAL,
+id_matiere INT,
+FOREIGN KEY(id_matiere) REFERENCES MATIERES(id));
 
 CREATE TABLE NOTES(
 id_eleve INT, 
-date_eval DATE, 
 valeur DECIMAL,
-coef INT, 
-id_matiere INT,
-FOREIGN KEY (id_matiere) REFERENCES MATIERES(id));
+id_evaluation INT,
+FOREIGN KEY (id_evaluation) REFERENCES EVALUATIONS(id));
+
+CREATE TABLE CLASSES(
+id INTEGER PRIMARY KEY,
+niveau TEXT,
+numero INT);
 
-CREATE TABLE ELEVES(
-id INT PRIMARY KEY,
+CREATE TABLE ELEVES(
+id INTEGER PRIMARY KEY,
 nom TEXT,
 prenom TEXT,
-classe TEXT,
-id_matieres TEXT);
+id_classe INT,
+FOREIGN KEY (id_classe) REFERENCES CLASSES(id));
 
-</sql><current_tab id="0"/></tab_sql></sqlb_project>
+-- Table d'intersection entre ELEVES, MATIERES et PROFESSEURS
+-- Traduit une relation triangulaire de &quot;many to many&quot; entre les élèves, les matières, et les professeurs
+
+-- Un élève a plusieurs matières et professeurs
+-- Une matière a plusieurs élèves et professeurs
+-- Un professeur a plusieurs élèves et plusieurs matières
+
+-- Un élève n'a pas toujours le même professeur pour une même matière (ex. demi-groupe)
+CREATE TABLE COURS(
+id_eleve INT,
+id_matiere INT,
+id_professeur INT,
+PRIMARY KEY (id_eleve, id_matiere, id_professeur),
+FOREIGN KEY (id_eleve) REFERENCES ELEVES(id),
+FOREIGN KEY (id_matiere) REFERENCES MATIERES(id),
+FOREIGN KEY (id_professeur) REFERENCES PROFESSEURS(id));</sql><current_tab id="0"/></tab_sql></sqlb_project>
