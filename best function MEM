@@ -1,0 +1,50 @@
+import sqlite3
+import matplotlib.pyplot as plt
+
+conn = sqlite3.connect("dbed.db")
+cur = conn.cursor()
+
+def MEM(eleve):
+    """Cette fonction permet d'obtenire un graphique retraçant chaque moyenne pour toutes les matière d'un élève choisie"""
+    moyenne = []
+    matiere_choisie = 0
+
+    list_matieres = []
+    compteur = 1
+    matiere = cur.execute(f"SELECT nom FROM MATIERES WHERE id = {compteur}").fetchall()
+    while compteur <= len(cur.execute(f"SELECT id FROM MATIERES").fetchall()):  #ENUMERATION DES MATIERES
+        list_matieres.append((matiere[0][0], compteur))
+        compteur += 1
+        matiere = cur.execute(f"SELECT nom FROM MATIERES WHERE id = {compteur}").fetchall()
+
+    for i in range(len(list_matieres)):  #SELECTION DE CHAQUE MATIERE
+        eval_select = cur.execute(f"SELECT id FROM EVALUATIONS WHERE id_matiere = {list_matieres[i][1]}").fetchall()
+
+        if len(eval_select) > 0:
+            note_ajout = []
+            for j in range(len(eval_select)):    #TABLEAU DE TABLAUX DES NOTES
+                note_ajout.append(cur.execute(f"SELECT valeur FROM NOTES WHERE id_evaluation = {eval_select[j][0]} AND id_eleve = {eleve}").fetchall())
+
+            note_select = []
+            if note_ajout[0]:  #CERTAINE EVALUATION N'ONT PAS DE NOTE
+                for j in range(len(note_ajout)):    #TABLAEU DES NOTES
+                    note_select.append(note_ajout[j][0])
+
+                somme = 0
+                for j in range(len(note_select)):
+                    somme += note_select[j][0]
+
+                moyenne.append(somme / len(note_select))
+                print(matiere_choisie,":",list_matieres[i][0])
+                matiere_choisie += 1
+
+    return moyenne
+    
+plt.plot(MEM(3))
+plt.show()
+plt.close()
+
+
+
+
+
